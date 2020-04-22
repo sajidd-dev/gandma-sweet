@@ -19,7 +19,115 @@
 
 <body>
 
+    <!-- nav bar -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg px-4">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navDiv">
+          <span class="toogler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+      <div class="collapse navbar-collapse" id="navDiv">
+          <ul class="navbar-nav text-capitalize mx-auto">
+            <li class="nav-item active">
+              <a href="#header" class="nav-link">home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#about" class="nav-link">about</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#store" class="nav-link">store</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#services" class="nav-link">services</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#cakes" class="nav-link">order</a>
+            </li>
+         </ul>
   
+         <div class="nav-info-items d-none d-lg-flex">
+            <!-- single info -->
+            <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+              <span class="info-icon mx-lg-3">
+                <i class="fas fa-phone"></i></span>
+                <p class="mb-0">
+                  +923165461186
+                </p>
+              
+            </div>
+            <div id="cart-info" class="nav-info mx-lg-5 align-items-center cart-info d-flex justify-content-between">
+              <span class="cart-info_icon mr-lg-3">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                <p class="mb-0 text-capitalize">
+                  <span id="item-count">2</span>
+                  items-$ 
+                   <span id="item-total">
+                     $ 18.0
+                   </span>
+                </p> 
+            </div>      
+         </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- banner -->
+  <div class="container-fluid">
+    <div class="row max-height justift-content-center align-items-center">
+      <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize">
+          welcome to <strong class="banner-title">grandma's sweet</strong>
+        </h1>
+        <a href="#store" class="btn banner-link text-upercase my-2">
+          explore
+        </a>
+      </div>
+      <!-- cart -->
+      <div class="cart" id="cart">
+        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+          <div class="item-text">
+            <p class="font-weight-bold mb-0" id="cart-item-title">
+              cart item
+            </p>  
+            <span>$</span>
+            <span id="cart-item-price" class="cart-item-price mb-0">10</span>
+          </div>
+          <a href="#" id="cart-item-remove" class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+          <div class="item-text">
+            <p class="font-weight-bold mb-0" id="cart-item-title">
+              cart item
+            </p>  
+            <span>$</span>
+            <span id="cart-item-price" class="cart-item-price mb-0">10</span>
+          </div>
+          <a href="#" id="cart-item-remove" class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+        </div>
+        <div class="cart-button-container mt-3 d-flex justify-content-between">
+          <a href="#" class="btn btn-black text-uppercase"> clear cart</a>
+          <a href="#" class="btn btn-pink text-uppercase">checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end of banner -->
+    </header>
+    <!-- end of header -->
 
 
   <!-- jquery -->
